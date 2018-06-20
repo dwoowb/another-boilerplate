@@ -8,12 +8,13 @@
 	* `rbenv local 2.5.1`
 
 ### Install gems
-* Install bundler
+* Install bundler if necessary
 	* `gem install bundler`
 * Bundle the gems defined in our Gemfile.lock
 	* `bundle`
 
 ### Database Setup
+* Download [postgres](https://www.postgresql.org/download/) if necessary
 * Configure `database.yml` to your existing pg db or leave the file as is, then run the following
 	* `rails db:migrate`
 	* `rake db:setup`
