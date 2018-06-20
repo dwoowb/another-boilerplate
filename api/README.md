@@ -1,24 +1,22 @@
-# README
+# Rails API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
+### Setting up Ruby
+* Install a Ruby version manager, e.g. [rbenv](https://github.com/rbenv/rbenv#installation)
+* Install Ruby version 2.5.1 and set it as your local version
+	* `rbenv install 2.5.1`
+	* `rbenv local 2.5.1`
 
-Things you may want to cover:
+### Install gems
+* Install bundler
+	* `gem install bundler`
+* Bundle the gems defined in our Gemfile.lock
+	* `bundle`
 
-* Ruby version
+### Database Setup
+* Configure `database.yml` to your existing pg db or leave the file as is, then run the following
+	* `rails db:migrate`
+	* `rake db:setup`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Run Server
+* `rails s`
